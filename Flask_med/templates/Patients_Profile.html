@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='Patients_Profile.css')}}">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient's Profile | Med Portfolio</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+            <div class="logo_name">&nbsp;&nbsp;Med Portfolio</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashbord</span>
+                </a>
+                <span class="tooltip">Dashbord</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="links_name">Reports</span>
+                </a>
+                <span class="tooltip">View Reports</span>
+            </li>
+            <li>
+                <a href="Patients_Profile.html" class="profile">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Profile</span>
+                </a>
+                <span class="tooltip">View Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="form.html">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Health Form</span>
+                </a>
+                <span class="tooltip">Health Form</span>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="{{url_for('static',filename='/Img/photo.jpg')}}" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Patients Name</div>
+                        <div class="job">Patients ID</div>
+                    </div>
+                </div>
+                <i class='bx bx-user' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <!-- <div class="profile-section">
+            <div class="text">This page is of patients profile..</div>
+        </div> -->
+        <div class="cont_row">
+            <div>
+                <header>
+                    <div class="user">
+                        <img src="{{url_for('static',filename='/Img/photo.jpg')}}" alt="Photo">
+                        <h3 class="name">Patients Name</h3>
+                        <p class="post">Patients ID</p>
+                    </div>
+
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#">Edit Profile</a></li>
+                        </ul>
+                    </nav>
+
+                </header>
+                <div id="menu" class="fas fa-bars"></div>
+            </div>
+            <div>
+                <!-- about section starts  -->
+
+                <section class="about" id="about">
+
+                    <h1 class="heading"> <span>My Profile</span></h1>
+                    <div class="row">
+
+                        <div class="info">
+                            <h3> <span> Name : </span> Patients Name </h3>
+                            <h3> <span> Patients ID : </span> Patients ID </h3>
+                            <h3> <span> Age : </span> Patients Age </h3>
+                            <h3> <span> Mobile No : </span> 9876543210 </h3>
+                            <h3> <span> Email ID : </span> abc123@xyz.com </h3>
+                            <h3> <span> Address : </span> Maharashtra, India </h3>
+                            <a href="#"><button class="btn"> Edit Profile </button></a>
+                        </div>
+
+                        <div class="counter">
+
+                            <div class="box">
+                                <span>2+</span>
+                                <h3>years of experience</h3>
+                            </div>
+
+                            <div class="box">
+                                <span>100+</span>
+                                <h3>porject completed</h3>
+                            </div>
+
+                            <div class="box">
+                                <span>430+</span>
+                                <h3>happy clients</h3>
+                            </div>
+
+                            <div class="box">
+                                <span>12+</span>
+                                <h3>awards won</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- about section ends -->
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="{{url_for('static',filename='Patients_Profile.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
