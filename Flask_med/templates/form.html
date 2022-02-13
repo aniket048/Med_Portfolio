@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='form.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Form | Med Portfolio</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+            <div class="logo_name">&nbsp;&nbsp;Med Portfolio</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="dashboard.html" class="dashbord">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name"> Dashboard</span>
+                </a>
+                <span class="tooltip"> Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Reports</span>
+                </a>
+                <span class="tooltip"> Reports</span>
+            </li>
+            <li>
+                <a href="Patients_Profile.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name"> Profile</span>
+                </a>
+                <span class="tooltip"> Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="form.html" class="form">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Health Form</span>
+                </a>
+                <span class="tooltip">Health Form</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="Img/photo.jpg" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Patients Name</div>
+                        <div class="job">Patients ID</div>
+                    </div>
+                </div>
+                <i class='bx bx-user' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section" id="form">
+        <div class="text2">General Health Form</div>
+        <section class="form">
+            <form method="post" action="/register">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label ft">Name</label>
+                    <input type="text" class="form-control" id="exampleInputtext" placeholder="Enter your Name" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputnumber" class="form-label ft">Age</label>
+                    <input type="number" class="form-control" id="exampleInputnumber" placeholder="Enter your Age" name="age">
+                    <input type="text" value="{{email}}" style="display: none;" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputnumber" class="form-label ft">Gender</label><br>
+                    <input type="radio" id="Male" name="gender" value="Male">
+                    <label for="Male"> Male</label><br>
+                    <input type="radio" id="Female" name="gender" value="Female">
+                    <label for="Female"> Female</label><br>
+                    <input type="radio" id="Third" name="gender" value="Not">
+                    <label for="Third"> Prefer Not to Answer</label><br>
+                </div>
+                <div class="mb-3">
+                    <label for="disease" class="ft">Active Disease:</label><br>
+                    <textarea id="disease" name="disease" style="align-content:left;height:100px ;width: 100%;">
+                    </textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="disease" class="ft">Past Chronic Disease:</label><br>
+                    <textarea id="disease2" name="disease2" style="align-content:left;height:100px ;width: 100%;">
+
+                    </textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I Agree to the Terms & Conditions</label>
+                </div>
+                <div class="Bu">
+                    <button type="submit" class="btn btn-primary btn2">Submit</button>
+                </div>
+            </form>
+        </section>
+    </section>
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
