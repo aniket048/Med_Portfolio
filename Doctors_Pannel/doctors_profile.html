@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="doctors_profile.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Profile | Med Portfolio</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+            <div class="logo_name">&nbsp;&nbsp;Med Portfolio</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list" style="padding-left: 0px;">
+            <li>
+                <a href="search.html">
+                    <i class='bx bx-search'></i>
+                    <span class="links_name">Search Patient</span>
+                </a>
+                <span class="tooltip">Search Patient</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">View Reports</span>
+                </a>
+                <span class="tooltip">View Reports</span>
+            </li>
+            <li>
+                <a href="doctors_profile.html" class="profile">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">View Profile</span>
+                </a>
+                <span class="tooltip">View Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="prescription.html">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Create Presciption</span>
+                </a>
+                <span class="tooltip">Create Prescription</span>
+            </li>
+
+            <li>
+                <a href="view_record.html">
+                    <i class='bx bx-folder'></i>
+                    <span class="links_name">View Records</span>
+                </a>
+                <span class="tooltip">Records</span>
+            </li>
+
+            <li>
+                <a href="../index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                    <span class="links_name">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="Img/photo.jpg" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Doctors Name</div>
+                        <div class="job">MBBS. MD.</div>
+                    </div>
+                </div>
+                <i class='bx bx-user' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <!-- <div class="text">This is doctors profile</div> -->
+        <div class="cont_row">
+            <div>
+                <header>
+                    <div class="user">
+                        <img src="Img/photo.jpg" alt="Photo">
+                        <h3 class="name">Doctors Name</h3>
+                        <p class="post">MBBS. MD.</p>
+                    </div>
+
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#">Edit Profile</a></li>
+                        </ul>
+                    </nav>
+
+                </header>
+                <div id="menu" class="fas fa-bars"></div>
+            </div>
+            <div>
+                <!-- about section starts  -->
+
+                <section class="about" id="about">
+
+                    <h1 class="heading"> <span>My Profile</span></h1>
+                    <div class="row">
+
+                        <div class="info">
+                            <h3> <span> Name : </span> Doctors Name </h3>
+                            <h3> <span> Doctors ID : </span> Doctors ID </h3>
+                            <h3> <span> Degree : </span> MBBS. MD. </h3>
+                            <h3> <span> Mobile No : </span> 9876543210 </h3>
+                            <h3> <span> Email ID : </span> abc123@xyz.com </h3>
+                            <h3> <span> Address : </span> Maharashtra, India </h3>
+                            <a href="#"><button class="btn"> Edit Profile </button></a>
+                        </div>
+
+                        <div class="counter">
+
+                            <div class="box">
+                                <span>15+</span>
+                                <h3>years of experience</h3>
+                            </div>
+
+                            <div class="box">
+                                <span>10+</span>
+                                <h3>Successful Surgeries</h3>
+                            </div>
+
+                            <div class="box">
+                                <h3>Happy clients</h3>
+                                <span>430+</span>
+                            </div>
+
+                            <div class="box">
+                                <span>12+</span>
+                                <h3>Awards Won</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- about section ends -->
+            </div>
+
+        </div>
+    </section>
+
+    <script src="doctors_profile.js"></script>
+</body>
+
+</html>
